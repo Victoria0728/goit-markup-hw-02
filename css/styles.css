@@ -1,21 +1,28 @@
-.container {
+
+body {
+    font-family: 'Montserrat', Roboto;
     background: #FFF;
     width: 1440px;
     height: 2592px;
     
 }
-.navheader{
-    display: flex;
+header{
     width: 1440px;
     height: 72px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
+    display: inline-flex;
+
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  
 }
 
-.navheader .headerA{
+nav .headerA{
     width: 44px;
     color: var(--navyblue, #2E2F42);
     font-family: 'Raleway';
@@ -26,10 +33,10 @@
     letter-spacing: 0.54px;
     text-transform: uppercase;
     margin: 25.5px 0 25.5px 156px;
-    margin-right: 76px;
+  
 }
 
-.navheader .logo{
+nav .logo{
     width: 71px;
     color: var(--iris, #4D5AE5);
     font-family: 'Raleway';
@@ -42,16 +49,21 @@
     
 }
 
-.navheader ul{
+nav ul{
     display: inline-flex;
     align-items: flex-start;
+    margin-right: 332px;
+    margin-left: 76px;
+    
 }
 
-.navheader ul li{
+nav ul li{
     display: inline-block;
+    
+
 }
 
-.navheader a{
+nav a{
     color: var(--navyblue, #2E2F42);
     font-family: 'Roboto';
     font-size: 16px;
@@ -62,7 +74,7 @@
     text-decoration: none;
 }
 
-.navheader li{
+nav li{
     gap: 40px;
     padding-left: 40px;
 }
@@ -75,12 +87,9 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-
     display: inline-flex;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 24px 40px 24px 332px;
-    margin-right: 156px;
+    
+   
 }
 
 /* Section 1 */
@@ -124,6 +133,7 @@
 main ul{
     margin-left: 156px;
     margin-right: 156px;
+    margin-bottom: 120px;
 }
 main li{
     display: inline-block;
@@ -234,38 +244,31 @@ main li{
 
 /* FOOTER */
 .foot{
+    width: 1440px;
     height: 312px;
-    flex-shrink: 0;
     background: var(--navyblue, #2E2F42);
-    flex-direction: column;
-    justify-content: center;
+    
 
 }
-.afoot {
+.foot a{
+    display: flex;
+    width: 44px;
+    height: 21px;
+    justify-content: center;
     color: var(--cloud, #F4F4FD);
     font-family: 'Raleway';
     font-size: 18px;
-    width: 71px;
-    height: 21px;
     font-style: normal;
     font-weight: 800;
     line-height: 21px; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
-   
-}
 
-.logofoot {
-    color: var(--iris, #4D5AE5);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin: 101.5 1169px 17.5px 0; 
+      
 }
+    
+  
+
 
 .foot p{
     color: var(--cloud, #F4F4FD);
@@ -275,12 +278,12 @@ main li{
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
-    margin: 140px 1020px 100px 156px;
+    margin: 17.5px 1020px 100px 156px;
 }
 
 
 /* PORTFILIO CSS */
-.containerport{
+.containerport {
     width: 1440px;
     height: 2076px;
     background: #FFF;
@@ -365,14 +368,18 @@ main li{
     margin-right: 156px;
 }
 
-.buttonport{
+.buttonport {
     display: flex;
     align-items: flex-start;
     gap: 24px;
     margin: 96px 0 72px 451px;
 }
 
-.portAll{
+.buttonport a{
+    text-decoration: none;
+}
+
+.portAll {
     display: flex;
     padding: 12px 24px;
     border-radius: 4px;
@@ -380,7 +387,7 @@ main li{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.portWeb{
+.portWeb {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -390,7 +397,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portApp{
+.portApp {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -400,7 +407,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portDes{
+.portDes {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -410,7 +417,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portMar{
+.portMar {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -419,6 +426,25 @@ main li{
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud, #F4F4FD);
 }
+
+/* First Section Portfolio */
+.port1stsection ul {
+    margin-left: 156px;
+}
+
+.port1stsection li {
+    width: 360px;
+    height: 300px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+
 
 /* Paayos po footerr. */
 /* FOOTER */
@@ -468,20 +494,4 @@ main li{
     /* 150% */
     letter-spacing: 0.32px;
     margin: 140px 1020px 100px 156px;
-}
-
-.port1stsection ul{
-    margin-left: 156px;
-}
-
-.port1stsection li{
-    width: 360px;
-    height: 300px;
-    flex-shrink: 0;
-    background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    flex-shrink: 0;
 }
