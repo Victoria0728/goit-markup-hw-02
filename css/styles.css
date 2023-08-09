@@ -3,117 +3,121 @@ body {
     font-family: 'Montserrat', Roboto;
     background: #FFF;
     width: 1440px;
-    height: 2592px;
-    
+    height: 2592px; 
 }
-header{
+header {
+
     width: 1440px;
     height: 72px;
-    flex-shrink: 0;
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
-    display: inline-flex;
-
 }
-nav{
+nav {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-  
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
 }
 
-nav .headerA{
-    width: 44px;
-    color: var(--navyblue, #2E2F42);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin: 25.5px 0 25.5px 156px;
-  
+nav a {
+    text-decoration: none;  
 }
 
-nav .logo{
+nav .web {
     width: 71px;
     color: var(--iris, #4D5AE5);
-    font-family: 'Raleway';
+    font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-left: 156px;
     
 }
 
-nav ul{
-    display: inline-flex;
-    align-items: flex-start;
-    margin-right: 332px;
-    margin-left: 76px;
-    
-}
-
-nav ul li{
-    display: inline-block;
-    
-
-}
-
-nav a{
+nav .studio {
+    width: 44px;
     color: var(--navyblue, #2E2F42);
-    font-family: 'Roboto';
+    font-family: Raleway;
+    font-size: 18px;                                                                                                                                                                            
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-left: 0px;
+   
+   
+}
+nav li a{
+    color: var(--navyblue, #2E2F42);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+nav ul{
+    display: flex;
+    margin-right: 200px;
+    margin-left: 76px;
+       
+}
+nav ul li{
+    display: flex;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    text-decoration: none;
+    
 }
-
+    
 nav li{
-    gap: 40px;
     padding-left: 40px;
+    
 }
 
 .add{
-    color: var(--slate, #434455);
     font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    display: inline-flex;
-    
-   
+    display: flex;
+    margin-right: 156px;  
+}
+.add a{
+    padding-left: 40px;
+    color: var(--slate, #434455);
 }
 
-/* Section 1 */
-.main1st {
+/* Main hero section */
+.hero {
+    width: 1440px;
+    height: 600px;
     flex-shrink: 0;
     background: var(--navyblue, #2E2F42);
-    padding: 188px 242px 298px 242px;
-
+    padding-top: 188px  
 }
-
-.h1text {
-    width: 496px;
+.herotext {
+   width: 496px;
     color: var(--white, #FFF);
-    align-items: center;
+    text-align: center;
     font-family: Roboto;
     font-size: 56px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 60px;
+    gap: 10px;
     letter-spacing: 1.12px;
-
-    margin-left: 250px;
+    margin-left: 472px;
+    margin-right: 472px;   
 }
-.btn {
+.herobtn {
     display: inline-flex;
     padding: 16px 32px;
     align-items: flex-start;
@@ -121,8 +125,9 @@ nav li{
     border-radius: 4px;
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-    margin-left: 400px;
+    margin-left: 636px;
+    margin-right: 635px;
+    margin-bottom: 188px;
     border-radius: 4px;
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -130,27 +135,25 @@ nav li{
 
 /* section 2 */
 
+.feature{
+    width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 main ul{
     margin-left: 156px;
-    margin-right: 156px;
-    margin-bottom: 120px;
+    
+    
 }
 main li{
     display: inline-block;
     text-decoration: none;
-
-    color: var(--slate, #434455);
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    
 }
 
-.main2nd h3{
+.feature h3{
     width: 264px;
-    margin-top: 120px;
     margin-bottom: 8px;
     color: var(--navyblue, #2E2F42);
     font-family: Roboto;
@@ -159,22 +162,23 @@ main li{
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
-
 }
 
-.main2nd p{
+.feature p{
     width: 264px;
     color: var(--slate, #434455);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: 0.32px;
-    margin-bottom: 120px;
+    margin-right: 24px;
+    
 }
+/* main 3rd section */
 
-.main3rd h2{
+.image h2{
     color: var(--navyblue, #2E2F42);
     text-align: center;
     font-family: Roboto;
@@ -186,23 +190,25 @@ main li{
     text-transform: capitalize;
 }
 
-.main3rd ul{
+.image ul{
     display: inline-flex;
     flex-direction: inline;
     align-items: flex-start;
     margin-top: 72px;
     margin-bottom: 120px;      
 }
-.main3rd li{
+.image li{
     border: 1px solid var(--cornflower, #E7E9FC);
     background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-       
+    margin-right: 24px;     
 }
 
-.main4rth {
+/* main 4rth section */
+
+.team {
     width: 1440px;
     height: 732px;
     flex-shrink: auto;
@@ -210,7 +216,7 @@ main li{
 
 }
 
-.main4rth h2 {
+.team h2 {
     color: var(--navyblue, #2E2F42);
     text-align: center;
     font-family: 'Roboto';
@@ -224,149 +230,105 @@ main li{
     margin-bottom: 72px;
 }
 
-.main4rth ul{
-    gap: 32px;
-}
-
-.main4rth li {
-    background: url(<path-to-image>), lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
+.team li {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 24px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
       
 }
 
-.main4rth h3 p{
-    padding: 32px;
+.team h3 {
+    color: var(--navyblue, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+.team p {
+    color: var(--slate, #434455);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  
 }
 
+
 /* FOOTER */
-.foot{
+footer{
     width: 1440px;
     height: 312px;
     background: var(--navyblue, #2E2F42);
     
-
 }
-.foot a{
+footer a {
     display: flex;
-    width: 44px;
     height: 21px;
-    justify-content: center;
-    color: var(--cloud, #F4F4FD);
-    font-family: 'Raleway';
+    padding-top: 101.5px;
+    text-decoration: none;
+}
+footer .web{
+    width: 44px;
+    color: var(--iris, #4D5AE5);
+    font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    line-height: 21px; /* 116.667% */
+    line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-left: 156px;   
+}
+footer .studio{
 
-      
+    color: var(--cloud, #F4F4FD);
+    width: 71px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;  
 }
     
-  
-
-
-.foot p{
+footer p{
     color: var(--cloud, #F4F4FD);
     font-family: 'Roboto';
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
-    margin: 17.5px 1020px 100px 156px;
+    margin-left: 156px;
+    margin-bottom: 100px;
+    margin-right: 1020px;
 }
 
 
 /* PORTFILIO CSS */
-.containerport {
+.portfolio {
     width: 1440px;
     height: 2076px;
     background: #FFF;
 }
 
-.navheaderport {
-    display: flex;
-    width: 1440px;
-    height: 72px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
-}
-
-.navheaderport .headerAport {
-    width: 44px;
-    color: var(--navyblue, #2E2F42);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin: 25.5px 0 25.5px 156px;
-    margin-right: 76px;
-}
-
-.navheaderport .logoport {
-    width: 71px;
-    color: var(--iris, #4D5AE5);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-
-}
-
-.navheaderport ul {
-    display: inline-flex;
-    align-items: flex-start;
-}
-
-.navheaderport ul li {
-    display: inline-block;
-}
-
-.navheaderport a {
-    color: var(--navyblue, #2E2F42);
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    text-decoration: none;
-}
-
-.navheaderport li {
-    gap: 40px;
-    padding-left: 40px;
-}
-
-.addport {
-    color: var(--slate, #434455);
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 24px 40px 24px 332px;
-    margin-right: 156px;
-}
+/* button section portfolio */
 
 .buttonport {
     display: flex;
@@ -377,9 +339,10 @@ main li{
 
 .buttonport a{
     text-decoration: none;
+    cursor: pointer;
 }
 
-.portAll {
+.btnall {
     display: flex;
     padding: 12px 24px;
     border-radius: 4px;
@@ -387,7 +350,7 @@ main li{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.portWeb {
+.btnweb {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -397,7 +360,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portApp {
+.btnapp {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -407,7 +370,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portDes {
+.btndes {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -417,7 +380,7 @@ main li{
     background: var(--cloud, #F4F4FD);
 }
 
-.portMar {
+.btnmarket {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -446,52 +409,3 @@ main li{
 
 
 
-/* Paayos po footerr. */
-/* FOOTER */
-.footport {
-    height: 312px;
-    flex-shrink: 0;
-    background: var(--navyblue, #2E2F42);
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.afootport {
-    color: var(--cloud, #F4F4FD);
-    font-family: 'Raleway';
-    font-size: 18px;
-    width: 71px;
-    height: 21px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    /* 116.667% */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-
-}
-
-.logofootport {
-    color: var(--iris, #4D5AE5);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin: 101.5 1169px 17.5px 0;
-}
-
-.footport p {
-    color: var(--cloud, #F4F4FD);
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
-    margin: 140px 1020px 100px 156px;
-}
