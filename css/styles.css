@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Montserrat', 'Roboto';
+    font-family: 'Roboto', sans-serif;
     background: #FFF;
     width: 1440px;
     height: 2592px; 
@@ -32,7 +32,7 @@ nav .web {
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.5;
     letter-spacing: 0.54px;
     text-transform: uppercase;
       
@@ -60,7 +60,6 @@ nav .navstudio .web:hover{
 
 nav li a{
     color: var(--navyblue, #2E2F42);
-    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -89,7 +88,6 @@ nav li{
 }
 
 .add{
-    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -187,7 +185,6 @@ main li{
 .feature p{
     width: 264px;
     color: var(--slate, #434455);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -201,7 +198,6 @@ main li{
 .image h2{
     color: var(--navyblue, #2E2F42);
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -245,7 +241,6 @@ main li{
 .team h2 {
     color: var(--navyblue, #2E2F42);
     text-align: center;
-    font-family: 'Roboto';
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -272,7 +267,6 @@ main li{
 .team h3 {
     color: var(--navyblue, #2E2F42);
     text-align: center;
-    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -284,7 +278,6 @@ main li{
 .team p {
     color: var(--slate, #434455);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -346,7 +339,6 @@ footer .web{
     
 footer p{
     color: var(--cloud, #F4F4FD);
-    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
@@ -377,7 +369,7 @@ footer p{
     margin: 96px 0 72px 451px;
 }
 
-.buttonport a{
+.buttonport {
     text-decoration: none;
     cursor: pointer;
 }
@@ -390,7 +382,7 @@ footer p{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.btnweb {
+.btnport {
     display: flex;
     padding: 12px 24px;
     justify-content: center;
@@ -398,90 +390,61 @@ footer p{
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud, #F4F4FD);
+    padding: 12px 24px;
 }
 
-.btnapp {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
-}
-
-.btndes {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
-}
-
-.btnmarket {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
-}
-.buttonport a:hover{
+.btnport:hover{
     box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
 }
 
-/* First Section Portfolio */
+.btnall:hover{
+box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
+cursor: pointer;
+transition: 0.5s;
+}
+
+/*  main section Portfolio */
 .portsection ul {
     margin-left: 156px;
     margin-top: 48px;
+
 }
 
 .portsection li {
-    width: 360px;
-    height: 300px;
-    padding-bottom: 0px;
+    display: inline-flex;;
     flex-direction: column;
-    background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius:0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    gap: 32px;
+    justify-content: center;
     margin-left: 24px;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
 }
 
-.portsection h3{
+.portsection li h3{
     margin-bottom: 8px;
-    margin-top: 32px;
     color: var(--navyblue, #2E2F42);
-    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
-
+    margin-left: 16px;
+    margin-top: 32px;
 
 }
-.portsection p{
-    margin-top: 8px;
+.portsection li p{
     margin-bottom: 32px;
     color: var(--slate, #434455);
-    font-family: Roboto;
     font-size: 16px;
+    line-height: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0.32px;
+    margin-left: 16px;
 }
 
-.portsection ul li:hover{
+.portsection ul li:hover {
     box-shadow: 1px 1px 4px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
