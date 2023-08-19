@@ -1,220 +1,210 @@
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #FFF;
-    width: 1440px;
-    height: 2592px; 
-}
-header {
-
-    width: 1440px;
-    height: 72px;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
-}
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
     
+    font-family: 'Roboto', sans-serif;
+    --primarybackground:  #ffff;
+    --primaryfontcolor: #2e2f42;
+    --slate: #434455;
+    --cloud: #F4f4fd;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    line-height: 1.5em;
+    width: 1440px;
+    font-weight: 400;
+    height: 2592px;
 }
 
-nav a {
-    text-decoration: none; 
+h2, h3, .navstudio, .navheader a {
+    color: var(--primaryfontcolor);
 }
 
-nav .web {
+.headeradd a, p {
+    color: var(--slate);
+}
+.footstudio, .mainfoot p{
+    color: var(--cloud);
+}
+
+.navheader a, .headeradd a, p {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit; 
+}
+
+.headeradd, p {
+    font-weight: inherit;
+}
+
+.mainheader {
+    height: 72px;
+    width: 1440px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);   
+}
+
+.navheader {
+    display: flex; 
+}
+
+.navheader a {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navheader .web {
     width: 71px;
     color: var(--iris, #4D5AE5);
     font-family: 'Raleway';
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 1.16; 
+    line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-      
 }
 
-.navstudio{
+.navstudio {
     width: 44px;
-    color: var(--navyblue, #2E2F42);
     font-family: 'Raleway';
-    font-size: 18px;                                                                                                                                                                            
-    font-style: normal;
+    font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     padding-right: 76px;
     margin-left: 156px;
 }
 
-nav .navstudio .web:hover{
-    border-color: violet;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-nav li a{
-    color: var(--navyblue, #2E2F42);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-}
-nav ul{
+.navheader > ul {
     display: flex;
     margin-right: 200px;
-    margin-left: 76px;
-       
+    margin-left: 76px; 
+    margin-top: 24px;  
 }
-nav ul li{
-    display: flex;
-    font-size: 16px;
-    font-style: normal;
+.navheader li  {
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    
-    
+    padding-left: 40px;
+    margin-bottom: 24px;  
 }
-    
-nav li{
+.navheader ul li  {
+    list-style-type: none;
+}
+.headeradd{
+    margin-top: 24px;
+
+}
+.headeradd a {
     padding-left: 40px;
     
+
 }
 
-.add{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    display: flex;
-    margin-right: 156px;  
-}
-.add a{
-    margin-left: 40px;
-    color: var(--slate, #434455);
-}
-
-nav ul li a:active,
-nav ul li a:hover{
-    border-color: violet;
-    transition: 0.5s;
-    cursor: pointer;
+.navheader a:focus {
+    color: blue;
+    
 }
 
 /* Main hero section */
-.hero {
+.studiohero {
+
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
     background: var(--navyblue, #2E2F42);
-    padding-top: 188px  
 }
-.herotext {
-   width: 496px;
+.studiohero h1 {
+    display: flex;
+    width: 496px;
+    height: 120px;
     color: var(--white, #FFF);
     text-align: center;
-    font-family: Roboto;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 1.07em;
     font-weight: 700;
     gap: 10px;
     letter-spacing: 1.12px;
-    margin-left: 472px;
-    margin-right: 472px;   
+    padding-top: 188px;
+    margin: 0px 472px 48px 472px;
+  
 }
-
-.herobtn {
+   
+.studiohero button{
     display: inline-flex;
-    padding: 16px 32px;
     align-items: flex-start;
+    font-family: inherit;
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
-    background: var(--iris, #4D5AE5);
+    background: var(--cloud, #F4F4FD);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-left: 636px;
-    margin-right: 635px;
-    margin-bottom: 188px;
-    border-radius: 4px;
-    background: var(--iris, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0px 635px 188px 636px;
+    /* button text */
+    color: var(--iris, #4D5AE5);
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
 }
 
-.herobtn:hover{
-    box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
+.studiohero button:hover{
+    background-color: blue;
     cursor: pointer;
     transition: 0.5s;
+    color: var(--iris, #FFF);
+    
 }
+
 
 /* section 2 */
 
-.feature{
+.studiofeature{
     width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-main ul{
+.studiomain ul{
     margin-left: 156px;
-    
-    
-}
-main li{
-    display: inline-block;
-    text-decoration: none;
-    
+    display: inline-flex;
 }
 
-.feature h3{
+.studiofeature ul li{
+    list-style-type: none;
+}  
+
+
+.studiofeature h3{
     width: 264px;
     margin-bottom: 8px;
-    color: var(--navyblue, #2E2F42);
-    font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2em;
     letter-spacing: 0.4px;
 }
 
-.feature p{
+.studiofeature p{
     width: 264px;
-    color: var(--slate, #434455);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
     margin-right: 24px;
     
 }
 /* main 3rd section */
 
-.image h2{
-    color: var(--navyblue, #2E2F42);
+.studioimage h2{
     text-align: center;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.11; /* 111.111% */
+    line-height: 1.11em;
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
 
-.image ul{
-    display: inline-flex;
-    flex-direction: inline;
-    align-items: flex-start;
+.studioimage ul{
     margin-top: 72px;
     margin-bottom: 120px;      
 }
-.image li{
+.studioimage li{
     border: 1px solid var(--cornflower, #E7E9FC);
     background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
     display: inline-flex;
@@ -223,7 +213,7 @@ main li{
     margin-right: 24px;     
 }
 
-.image ul li:hover{
+.studioimage ul li:hover{
     box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
@@ -231,7 +221,7 @@ main li{
 
 /* main 4rth section */
 
-.team {
+.studioteam {
     width: 1440px;
     height: 732px;
     flex-shrink: auto;
@@ -239,20 +229,19 @@ main li{
 
 }
 
-.team h2 {
-    color: var(--navyblue, #2E2F42);
+.studioteam h2 {
     text-align: center;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.11;
+    line-height: 1.11em;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     padding-top: 120px;
     margin-bottom: 72px;
 }
 
-.team li {
+.studioteam li {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -265,31 +254,23 @@ main li{
       
 }
 
-.team h3 {
-    color: var(--navyblue, #2E2F42);
+.studioteam h3 {
     text-align: center;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.2em;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
     margin-top: 32px;
 }
-.team p {
-    color: var(--slate, #434455);
+.studioteam p {
     text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
     margin-top: 8px;
     margin-bottom: 32px;
   
 }
 
-.team ul li:hover{
+.studioteam ul li:hover{
     box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
@@ -298,67 +279,62 @@ main li{
 
 /* FOOTER */
 
-footer{
+/* FOOTER */
+
+.mainfoot {
     width: 1440px;
     height: 312px;
     background: var(--navyblue, #2E2F42);
-    
+
 }
-footer a {
+
+.mainfoot a {
     display: flex;
     height: 21px;
     padding-top: 101.5px;
     text-decoration: none;
+   
 }
-footer .web{
+
+.mainfoot .web {
     width: 44px;
     color: var(--iris, #4D5AE5);
     font-family: Raleway;
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 1.17;
+    line-height: 1.17em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    margin-left: 156px;   
+    margin-left: 156px;
 }
 
- .footstudio {
+.footstudio {
     width: 71px;
-    color: var(--cloud, #F4F4FD);
     font-family: 'Raleway';
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 1.17;
+    line-height: 1.17em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     padding-right: 76px;
 
 }
 
-    
-footer p{
-    color: var(--cloud, #F4F4FD);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
+
+.mainfoot p {
     margin-left: 156px;
     margin-bottom: 100px;
     margin-right: 1020px;
 }
 
-.portfoot {
-    margin-top: 120px;
-}
+
+
 
 
 /* PORTFILIO CSS */
 .portfolio {
-    width: 1440px;
     height: 2076px;
-    background: #FFF;
+
 }
 
 /* button section portfolio */
@@ -368,49 +344,47 @@ footer p{
     align-items: flex-start;
     gap: 24px;
     margin: 96px 0 72px 451px;
-}
-
-.buttonport {
     text-decoration: none;
     cursor: pointer;
+  
 }
 
-.btnall {
+.buttonport button {
+    color: var(--iris, #4D5AE5);
+    text-align: center;
     display: flex;
     padding: 12px 24px;
-    border-radius: 4px;
-    background: var(--ocean, #404BBF);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
-
-.btnport {
-    display: flex;
-    padding: 12px 24px;
+    font-family: inherit;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud, #F4F4FD);
     padding: 12px 24px;
+    font-size: inherit;
+    font-weight: inherit;
+    
+    
+    
 }
 
-.btnport:hover{
-    box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
+.buttonport button:hover {
+    background-color: blue;
     cursor: pointer;
     transition: 0.5s;
+    color: var(--iris, #FFF);
 }
 
-.btnall:hover{
-box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
-cursor: pointer;
-transition: 0.5s;
+.buttonport button:focus {
+    background-color: blue;
 }
 
 /*  main section Portfolio */
-.portsection ul {
+
+.portsection{
     margin-left: 156px;
     margin-top: 48px;
-
+    margin-bottom: 120px;
 }
 
 .portsection li {
@@ -424,11 +398,9 @@ transition: 0.5s;
 
 .portsection li h3{
     margin-bottom: 8px;
-    color: var(--navyblue, #2E2F42);
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.2em;
     letter-spacing: 0.4px;
     margin-left: 16px;
     margin-top: 32px;
@@ -436,16 +408,11 @@ transition: 0.5s;
 }
 .portsection li p{
     margin-bottom: 32px;
-    color: var(--slate, #434455);
-    font-size: 16px;
-    line-height: 1.5;
-    font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.32px;
     margin-left: 16px;
 }
 
-.portsection ul li:hover {
+.portsection li:hover {
     box-shadow: 1px 1px 4px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
