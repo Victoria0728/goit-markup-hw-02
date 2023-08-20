@@ -1,69 +1,36 @@
-body {
-    
-    font-family: 'Roboto', sans-serif;
-    --primarybackground:  #ffff;
-    --primaryfontcolor: #2e2f42;
+:root{
+    --cornflower: #E7E9FC;
     --slate: #434455;
     --cloud: #F4f4fd;
+    --iris: #4D5AE5;
+    --bgnavyblue: #2e2f42;
+    --colorwhite: #fff;
+}
+
+body { 
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    letter-spacing: 0.32px;
-    line-height: 1.5em;
-    width: 1440px;
     font-weight: 400;
-    height: 2592px;
+    background-color: var(--primarybg,#FFF);
+    color:var(--maincolor, #2e2f42);
 }
-
-h2, h3, .navstudio, .navheader a {
-    color: var(--primaryfontcolor);
-}
-
-.headeradd a, p {
-    color: var(--slate);
-}
-.footstudio, .mainfoot p{
-    color: var(--cloud);
-}
-
-.navheader a, .headeradd a, p {
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: inherit; 
-}
-
-.headeradd, p {
-    font-weight: inherit;
-}
-
-.mainheader {
-    height: 72px;
-    width: 1440px;
-    flex-shrink: 0;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);   
-}
-
-.navheader {
-    display: flex; 
-}
-
-.navheader a {
-    margin-bottom: 24px;
-    margin-top: 24px;
-    text-decoration: none;
+.h3text{
+    color: var(--maincolor);
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+}
+.ptxt{
+    color: var(--slate);
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
 }
 
-.navheader .web {
-    width: 71px;
-    color: var(--iris, #4D5AE5);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.16em;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-}
-
-.navstudio {
+.navstudio{
+    color: var(--maincolor);
     width: 44px;
     font-family: 'Raleway';
     font-size: 18px;
@@ -73,50 +40,103 @@ h2, h3, .navstudio, .navheader a {
     text-transform: uppercase;
     padding-right: 76px;
     margin-left: 156px;
+    text-decoration: none;
+}
+.navheader .web {
+    width: 71px;
+    color: var(--iris);
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.navheader > ul {
+.navheader .aheader {
+    color: var(--maincolor);
+    font-size: inherit;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.addheader{
+    color: var(--slate);
+    font-size: inherit;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.mainheader {
+    height: 72px;
+    width: 1440px;
+    border-bottom: 1px solid var(--cornflower);   
+}
+
+.navheader {
+    display: flex;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  
+}
+.navheader > .nav-ul {
     display: flex;
     margin-right: 200px;
     margin-left: 76px; 
-    margin-top: 24px;  
+   
+  
 }
-.navheader li  {
+.navheader .nav-li  {
     font-weight: 500;
     padding-left: 40px;
-    margin-bottom: 24px;  
-}
-.navheader ul li  {
     list-style-type: none;
-}
-.headeradd{
-    margin-top: 24px;
-
-}
-.headeradd a {
-    padding-left: 40px;
-    
-
+   
 }
 
-.navheader a:focus {
-    color: blue;
-    
+
+.navstudio:focus {
+    color: var(--iris);   
+}
+.navstudio:hover {
+    color: var(--iris);   
+}
+
+.aheader:focus {
+    color: var(--iris);   
+}
+.aheader:hover {
+    color: var(--iris);   
+}
+
+.addheader:focus {
+    color: var(--iris);   
+}
+.addheader:hover {
+    color: var(--iris);   
 }
 
 /* Main hero section */
 .studiohero {
-
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
-    background: var(--navyblue, #2E2F42);
+    background: var(--bgnavyblue);
 }
-.studiohero h1 {
+.studiohero .h1txt {
     display: flex;
     width: 496px;
     height: 120px;
-    color: var(--white, #FFF);
+    color: var(--colorwhite);
     text-align: center;
     font-size: 56px;
     line-height: 1.07em;
@@ -128,7 +148,7 @@ h2, h3, .navstudio, .navheader a {
   
 }
    
-.studiohero button{
+.studiohero .herobutton{
     display: inline-flex;
     align-items: flex-start;
     font-family: inherit;
@@ -137,24 +157,26 @@ h2, h3, .navstudio, .navheader a {
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
+    background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin: 0px 635px 188px 636px;
     /* button text */
-    color: var(--iris, #4D5AE5);
+    color: var(--cloud);
     font-size: 16px;
     line-height: 1.5em;
     font-weight: 500;
 }
-
-.studiohero button:hover{
-    background-color: blue;
+.studiohero .herobutton:active,
+.studiohero .herobutton:hover{
+    background-color: var(--cloud);
     cursor: pointer;
     transition: 0.5s;
-    color: var(--iris, #FFF);
-    
+    color: black;  
 }
-
+.studiohero .herobutton:focus {
+    background-color:var(--cloud);
+    color: black;
+}
 
 /* section 2 */
 
@@ -164,33 +186,34 @@ h2, h3, .navstudio, .navheader a {
     padding-bottom: 120px;
 }
 
-.studiomain ul{
+.feature-ul{
     margin-left: 156px;
     display: inline-flex;
 }
 
-.studiofeature ul li{
+.feature-li{
     list-style-type: none;
 }  
 
 
-.studiofeature h3{
+.studiofeature .h3text{
     width: 264px;
     margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.4px;
+   
 }
 
-.studiofeature p{
+.studiofeature .ptxt{
     width: 264px;
     margin-right: 24px;
     
 }
 /* main 3rd section */
 
-.studioimage h2{
+.studioimage{
+    width: 1440px;
+}
+
+.h2studioimage{
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -200,24 +223,26 @@ h2, h3, .navstudio, .navheader a {
     text-transform: capitalize;
 }
 
-.studioimage ul{
+.studioimage-ul{
     margin-top: 72px;
-    margin-bottom: 120px;      
+    margin-bottom: 120px;
+    margin-left: 156px;      
 }
-.studioimage li{
-    border: 1px solid var(--cornflower, #E7E9FC);
+.studioimage-li{
+    border: 1px solid var(--cornflower);
     background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 24px;     
+    margin-right: 24px;
+      
 }
-
-.studioimage ul li:hover{
+.studioimage-li:hover{
     box-shadow: 1px 1px 5px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
 }
+
 
 /* main 4rth section */
 
@@ -225,11 +250,11 @@ h2, h3, .navstudio, .navheader a {
     width: 1440px;
     height: 732px;
     flex-shrink: auto;
-    background: var(--cloud, #F4F4FD);
+    background: var(--cloud);
 
 }
 
-.studioteam h2 {
+.studioteam .h2studioteam {
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -241,7 +266,7 @@ h2, h3, .navstudio, .navheader a {
     margin-bottom: 72px;
 }
 
-.studioteam li {
+.studioteam-li {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -249,21 +274,21 @@ h2, h3, .navstudio, .navheader a {
     align-items: center;
     margin-right: 24px;
     border-radius: 0px 0px 4px 4px;
-    background: var(--white, #FFF);
+    background: var(--primarybg);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-      
+    
+}
+.studioteam-ul{
+    margin-left: 156px;
+   
 }
 
-.studioteam h3 {
+.studioteam .h3text {
     text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.4px;
     margin-bottom: 8px;
     margin-top: 32px;
 }
-.studioteam p {
+.studioteam .ptxt {
     text-align: center;
     margin-top: 8px;
     margin-bottom: 32px;
@@ -283,32 +308,28 @@ h2, h3, .navstudio, .navheader a {
 
 .mainfoot {
     width: 1440px;
+    flex-shrink: 0;
     height: 312px;
-    background: var(--navyblue, #2E2F42);
+    background: var(--bgnavyblue);
 
 }
 
-.mainfoot a {
-    display: flex;
-    height: 21px;
-    padding-top: 101.5px;
-    text-decoration: none;
-   
-}
+
 
 .mainfoot .web {
     width: 44px;
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    margin-left: 156px;
+    
 }
 
-.footstudio {
+.mainfoot .footstudio {
+    color: var(--colorwhite);
     width: 71px;
     font-family: 'Raleway';
     font-size: 18px;
@@ -317,14 +338,30 @@ h2, h3, .navstudio, .navheader a {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     padding-right: 76px;
-
+    display: flex;
+    height: 21px;
+    padding-top: 101.5px;
+    text-decoration: none;
+    margin-left: 156px;
+    height: 21px;
+    padding-top: 101.5px;
+    text-decoration: none;
+   
 }
 
-
-.mainfoot p {
+.mainfoot .foot-p {
+    color: var(--cloud);
     margin-left: 156px;
     margin-bottom: 100px;
     margin-right: 1020px;
+    width: 264px;
+}
+
+.mainfoot a:focus {
+    color: var(--iris);
+    }
+.mainfoot a:hover {
+    color: var(--iris);   
 }
 
 
@@ -332,10 +369,6 @@ h2, h3, .navstudio, .navheader a {
 
 
 /* PORTFILIO CSS */
-.portfolio {
-    height: 2076px;
-
-}
 
 /* button section portfolio */
 
@@ -344,79 +377,73 @@ h2, h3, .navstudio, .navheader a {
     align-items: flex-start;
     gap: 24px;
     margin: 96px 0 72px 451px;
-    text-decoration: none;
-    cursor: pointer;
-  
+    list-style-type: none;
+   
+
 }
 
-.buttonport button {
-    color: var(--iris, #4D5AE5);
+.port-button {
+    color: var(--iris);
     text-align: center;
     display: flex;
-    padding: 12px 24px;
     font-family: inherit;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
     padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
     font-size: inherit;
     font-weight: inherit;
-    
-    
-    
+   
 }
 
-.buttonport button:hover {
-    background-color: blue;
+.port-button:active,
+.port-button:hover {
+    background-color: var(--iris);
     cursor: pointer;
-    transition: 0.5s;
-    color: var(--iris, #FFF);
+    color: var(--colorwhite);
 }
 
-.buttonport button:focus {
-    background-color: blue;
+.port-button:focus {
+    background-color: var(--iris);
+    color: var(--colorwhite);
 }
 
 /*  main section Portfolio */
 
 .portsection{
+    width: 1440px;
     margin-left: 156px;
     margin-top: 48px;
     margin-bottom: 120px;
 }
 
-.portsection li {
+.portsection-li {
     display: inline-flex;;
     flex-direction: column;
     justify-content: center;
     margin-left: 24px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
+    border: 1px solid var(--cornflower);
+    background: var(--colorwhite);
+    margin-bottom: 32px;
 }
 
-.portsection li h3{
+.portsection-li .h3text{
     margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.4px;
     margin-left: 16px;
     margin-top: 32px;
 
 }
-.portsection li p{
-    margin-bottom: 32px;
+.portsection-li .ptxt{
+    
     font-weight: 400;
     margin-left: 16px;
 }
 
-.portsection li:hover {
+.portsection-li:hover {
     box-shadow: 1px 1px 4px 3px rgb(207, 66, 184);
     cursor: pointer;
     transition: 0.5s;
-}
+} 
 
 
 
