@@ -103,14 +103,6 @@ body {
    
 }
 
-
-.navstudio:focus {
-    color: var(--iris);   
-}
-.navstudio:hover {
-    color: var(--iris);   
-}
-
 .aheader:focus {
     color: var(--iris);   
 }
@@ -355,13 +347,6 @@ body {
     margin-bottom: 100px;
     margin-right: 1020px;
     width: 264px;
-}
-
-.mainfoot a:focus {
-    color: var(--iris);
-    }
-.mainfoot a:hover {
-    color: var(--iris);   
 }
 
 
